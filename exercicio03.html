@@ -5,9 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Hello Bulma!</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
-  <script src="https://cdnjs.com/libraries/jquery.mask" type="text/javascript"></script>
-  <script src="exercicio03.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
   <link rel="stylesheet" href="exercicio03.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
@@ -83,7 +82,7 @@
           <div class="field">
             <label class="label has-text-grey is-uppercase">CPF</label>
             <div class="control">
-              <input class="input" type="text" placeholder="000.000.000-00">
+              <input class="input" id="cpf" type="text" placeholder="000.000.000-00">
             </div>
           </div>
         </div>
@@ -91,7 +90,7 @@
           <div class="field">
             <label class="label has-text-grey is-uppercase">RG</label>
             <div class="control">
-              <input class="input" type="text" placeholder="Informe o RG">
+              <input class="input" id="rg" type="text" placeholder="Informe o RG">
             </div>
           </div>
         </div>
@@ -99,7 +98,7 @@
           <div class="field">
             <label class="label has-text-grey is-uppercase">Nascimento</label>
             <div class="control has-icons-right">
-              <input class="input" type="text" placeholder="Informe a data">
+              <input class="input" id="dtNascimento" type="text" placeholder="Informe a data">
               <span class="icon is-small is-right">
                 <i class="fas fa-calendar-alt"></i>
               </span>
@@ -133,7 +132,7 @@
           </div>
         </div>
       </div>
-      <div class="columns">
+      <div class="columns mb-30">
         <div class="column">
           <div class="field">
             <label class="label has-text-grey is-uppercase">Palavras-chave</label>
@@ -143,6 +142,198 @@
           </div>
         </div>
       </div>
+
+      <div class="columns is-mobile mb-30">
+        <div class="column is-3">
+          <div class="field">
+            <label class="label has-text-grey is-uppercase">
+              E-mail
+            </label>
+            <div class="control">
+              <div class="select is-fullwidth">
+                <select>
+                  <option>Pessoal</option>
+                  <option>Comercial</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-5 custom-vbottom">
+          <div class="field">
+            <div class="control">
+              <input class="input" type="text" placeholder="Informe o endereço de e-mail">
+            </div>
+          </div>
+        </div>
+        <div class="column is-4 custom-vcentered">
+          <div class="columns is-mobile">
+            <div class="column is-narrow">
+              <p class="buttons">
+                <a class="button custom-add-button">
+                  <span class="icon is-small has-text-link">
+                    <i class="fas fa-plus"></i>
+                  </span>
+                </a>
+              </p>
+            </div>
+            <div class="column">
+              <div class="control">
+                <label class="radio is-uppercase">
+                  <input type="radio" name="answer">
+                  <span class="custom-radio-label">Principal</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns is-mobile mb-less">
+        <div class="column is-3">
+          <div class="field">
+            <label class="label has-text-grey is-uppercase">
+              Telefone
+            </label>
+            <div class="control">
+              <div class="select is-fullwidth">
+                <select>
+                  <option>Pessoal</option>
+                  <option>Comercial</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-3 custom-vbottom">
+          <div class="field">
+            <div class="control">
+              <input class="input" type="tel" placeholder="(47) 99999-4444">
+            </div>
+          </div>
+        </div>
+        <div class="column is-4 custom-vcentered">
+          <div class="columns is-mobile">
+            <div class="column is-narrow">
+              <p class="buttons">
+                <a class="button custom-add-button">
+                  <span class="icon is-small has-text-grey">
+                    <i class="fas fa-trash-alt"></i>
+                  </span>
+                </a>
+              </p>
+            </div>
+            <div class="column">
+              <div class="control">
+                <label class="radio is-uppercase">
+                  <input type="radio" name="answer">
+                  <span class="custom-radio-label">Principal</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns is-mobile mb-30">
+        <div class="column is-3">
+          <div class="field">
+            <div class="control">
+              <div class="select is-fullwidth">
+                <select>
+                  <option>Comercial</option>
+                  <option>Pessoal</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-3 custom-vbottom">
+          <div class="field">
+            <div class="control">
+              <input class="input" type="tel" placeholder="(47) 88888-2323">
+            </div>
+          </div>
+        </div>
+        <div class="column is-4 custom-vcentered">
+          <div class="columns is-mobile">
+            <div class="column is-narrow">
+              <p class="buttons">
+                <a class="button custom-add-button">
+                  <span class="icon is-small has-text-link">
+                    <i class="fas fa-plus"></i>
+                  </span>
+                </a>
+              </p>
+            </div>
+            <div class="column">
+              <div class="control">
+                <label class="radio is-uppercase">
+                  <input type="radio" name="answer">
+                  <span class="custom-radio-label">Principal</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns is-mobile mb-30">
+        <div class="column is-3">
+          <div class="field">
+            <label class="label has-text-grey is-uppercase">
+              Endereço
+            </label>
+            <div class="control">
+              <div class="select is-fullwidth">
+                <select>
+                  <option>Pessoal</option>
+                  <option>Comercial</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-5 custom-vbottom">
+          <div class="field">
+            <div class="control">
+              <input class="input" type="text" placeholder="Informe o endereço completo">
+            </div>
+          </div>
+        </div>
+        <div class="column custom-vcentered">
+          <div class="columns is-mobile">
+            <div class="column is-narrow">
+              <p class="buttons">
+                <a class="button custom-add-button">
+                  <span class="icon is-small has-text-link">
+                    <i class="fas fa-plus"></i>
+                  </span>
+                </a>
+              </p>
+            </div>
+            <div class="column">
+              <div class="control">
+                <label class="radio is-uppercase">
+                  <input type="radio" name="answer">
+                  <span class="custom-radio-label">Principal</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="column">
+          <span class="icon has-text-info">
+            <i class="fas fa-caret-square-up"></i>
+          </span>
+          <span class="custom-icon-label has-text-info">Ocultar campos</span>
+        </div>
+      </div>
+
+    </div>
 
     </div>
     <div class="container custom-footer custom-padding pb-60">
@@ -160,6 +351,7 @@
       </div>
     </div>
   </section>
+  <script src="exercicio03.js" type="text/javascript"></script>
 </body>
 
 </html>
